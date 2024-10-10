@@ -8,6 +8,9 @@ let clickCounter = 0;
 // button function
 function clickFunction() {
 
+    // shows clicks in inspect --> console, used to check code is working
+    console.log("the button has been clicked")
+
     // expanded version of line below: clickCounter = clickCounter + 1;
     clickCounter += 1;
 
