@@ -1,10 +1,15 @@
+/* whole page background */
+body{
+  background-color: rgb(18, 13, 8);
+}
+
 /* backgroudn colours */
-.bg-marine_blue {
+.bg-dark_green {
   background-color: #47632e;
 }
 
-.bg-bright_pink {
-  background-color: #ff0084;
+.bg-white {
+  background-color: white;
 }
 
 /* text colours */
@@ -12,6 +17,7 @@
   color: white;
 }
 
-body{
-  background-color: rgb(18, 13, 8);
+.text-green{
+  color: #2c3e1d;
 }
+

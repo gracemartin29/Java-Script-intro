@@ -12,7 +12,7 @@ const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
 
 //  let variables
-let charcterCounter = 1;
+let charcterCounter = 2;
 
 // button function
 
@@ -38,32 +38,32 @@ function clickFunction() {
     }
 
     if (charcterCounter === 1) {
-        characterImage.src = image1;
+        characterImage.src = image6;
         return;
     }
 
     if (charcterCounter === 2) {
-        characterImage.src = image2;
+        characterImage.src = image1;
         return;
     }
 
     if (charcterCounter === 3) {
-        characterImage.src = image3;
+        characterImage.src = image2;
         return;
     }
 
     if (charcterCounter === 4) {
-        characterImage.src = image4;
+        characterImage.src = image3;
         return;
     }
 
     if (charcterCounter === 5) {
-        characterImage.src = image5;
+        characterImage.src = image4;
         return;
     }
 
     if (charcterCounter === 6) {
-        characterImage.src = image6;
+        characterImage.src = image5;
         return;
     }
 
