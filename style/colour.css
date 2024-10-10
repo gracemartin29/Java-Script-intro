@@ -21,3 +21,12 @@ body{
   color: #2c3e1d;
 }
 
+a{
+  color: rgb(172, 185, 186);
+}
+
+a:hover{
+  color: blue;
+}
+
+

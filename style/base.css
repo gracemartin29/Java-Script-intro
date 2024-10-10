@@ -31,3 +31,28 @@ a {
   margin: 10px;
   cursor: pointer;
 }
+
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+}
+
+#nav-placeholder{
+  height: 40px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  background-color: rgba(30, 94, 129, 0.628);
+}
+
+nav ul li{
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 5px;
+  cursor: pointer;
+}
