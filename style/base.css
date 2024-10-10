@@ -32,18 +32,6 @@ a {
   cursor: pointer;
 }
 
-#my-button2 {
-  all: unset;
-  background-color: rgb(147, 148, 148);
-  color: black;
-  padding: 6px;
-  border-style: groove;
-  border-color: black;
-  border-radius: 7px;
-  margin: 10px;
-  cursor: pointer;
-}
-
 nav {
   position: fixed;
   width: 100vw;

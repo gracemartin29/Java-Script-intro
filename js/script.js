@@ -6,14 +6,14 @@ const image3 = ("assets/Last_of_Us/DinaPart2.webp");
 const image4 = ("assets/Last_of_Us/Tommy_Seattle_Profile.webp");
 const image5 = ("assets/Last_of_Us/Jesse-TLOU.webp");
 const image6 = ("assets/Last_of_Us/TLOU2-Maria-portrait.webp");
-// dbh
-const image7 = ("/assets/Detriot_Become_Human/Connor_JP_site.webp")
-const image8 = ("/assets/Detriot_Become_Human/Kara_JP_site.webp")
-const image9 = ("/assets/Detriot_Become_Human/Detroit-become-human-image-jp-character-deatail-3-img-pc.webp")
+
+// detroit become human
+const image7 = ("assets/Detriot_Become_Human/Connor_JP_site.webp");
+const image8 = ("assets/Detriot_Become_Human/Kara_JP_site.webp");
+const image9 = ("assets/Detriot_Become_Human/Markus_JP_site.webp");
 
 // defines HTML constants
 const myButton = document.getElementById("my-button");
-const myButton2 = document.getElementById("my-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
 
@@ -76,7 +76,3 @@ function clickFunction() {
 }
 
 myButton.onclick = clickFunction;
-
-
-// button
-// myButton2.onclick = clickFunction2;
