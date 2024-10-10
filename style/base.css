@@ -23,8 +23,10 @@ a {
 #my-button{
   all: unset;
   background-color: rgb(165, 165, 70);
+  color: black;
   padding: 6px;
   border-style: groove;
+  border-color: black;
   border-radius: 7px;
   margin: 10px;
   cursor: pointer;
