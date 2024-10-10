@@ -20,7 +20,7 @@ a {
   cursor: pointer;
 }
 
-#my-button{
+#my-button {
   all: unset;
   background-color: rgb(147, 148, 148);
   color: black;
@@ -32,6 +32,17 @@ a {
   cursor: pointer;
 }
 
+#my-button2 {
+  all: unset;
+  background-color: rgb(147, 148, 148);
+  color: black;
+  padding: 6px;
+  border-style: groove;
+  border-color: black;
+  border-radius: 7px;
+  margin: 10px;
+  cursor: pointer;
+}
 
 nav {
   position: fixed;
@@ -39,17 +50,17 @@ nav {
   height: 40px;
 }
 
-#nav-placeholder{
+#nav-placeholder {
   height: 40px;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   background-color: rgba(30, 94, 129, 0.628);
 }
 
-nav ul li{
+nav ul li {
   padding: 5px;
   border-style: solid;
   border-width: 2px;
