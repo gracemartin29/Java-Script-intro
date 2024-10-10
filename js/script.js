@@ -13,7 +13,7 @@ const image9 = ("/assets/Detriot_Become_Human/Detroit-become-human-image-jp-char
 
 // defines HTML constants
 const myButton = document.getElementById("my-button");
-const myButton2 = document.getElementById("my-button2")
+const myButton2 = document.getElementById("my-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
 
@@ -77,35 +77,6 @@ function clickFunction() {
 
 myButton.onclick = clickFunction;
 
-// button function 2
-function clickFunction2() {
-    // shows clicks in inspect --> console, used to check code is working
-    console.log("the button has been clicked")
 
-    myParagraph.innerHTML = "I am on charcter " + charcterCounter;
-
-    // update charcter counter
-    charcterCounter += 1;
-
-    // finds images depending on charcter counter
-    if (charcterCounter > 3) {
-        charcterCounter = 1;
-    }
-
-    if (charcterCounter === 1) {
-        characterImage.src = image9;
-        return;
-    }
-
-    if (charcterCounter === 2) {
-        characterImage.src = image7;
-        return;
-    }
-
-    if (charcterCounter === 3) {
-        characterImage.src = image8;
-        return;
-    }
-}
 // button
-myButton2.onclick = clickFunction2;
+// myButton2.onclick = clickFunction2;
