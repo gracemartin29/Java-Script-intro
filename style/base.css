@@ -19,3 +19,13 @@ a {
   user-select: none;
   cursor: pointer;
 }
+
+#my-button{
+  all: unset;
+  background-color: blueviolet;
+  padding: 6px;
+  border-style: groove;
+  border-radius: 7px;
+  margin: 5px;
+  cursor: pointer;
+}
