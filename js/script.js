@@ -1,7 +1,11 @@
+// constant variables
+const myButton = document.getElementById("my-button");
+const myParagraph = document.getElementById("my-paragraph")
 
+// button
+myButton.onclick = clickFunction;
 
-document.getElementById("my-button").addEventListener("click", clickFunction);
-
+// button function
 function clickFunction() {
-    document.getElementById("my-paragraph").innerHTML = "changed paragraph";
+    myParagraph.innerHTML = "changed paragraph";
 }
