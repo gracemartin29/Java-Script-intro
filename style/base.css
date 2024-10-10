@@ -22,7 +22,7 @@ a {
 
 #my-button{
   all: unset;
-  background-color: blueviolet;
+  background-color: rgb(165, 165, 70);
   padding: 6px;
   border-style: groove;
   border-radius: 7px;

@@ -25,3 +25,7 @@
 .flex-column {
   flex-direction: column;
 }
+
+img{
+  width: 220px;
+}
