@@ -1,12 +1,15 @@
 // defines image sources for charcter choice
-const image1 = ("assests/Joel_in_The_Last_of_Us.png")
-const image2 = ("assests/Ellie_in_The_Last_of_Us_Part_II.png")
-const image3 = ("assests/Abby_in_The_Last_of_Us_Part_II.png")
+const image1 = ("assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp");
+const image2 = ("assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png");
+const image3 = ("assets/Last_of_Us/DinaPart2.webp");
+const image4 = ("assets/Last_of_Us/Tommy_Seattle_Profile.webp");
+const image5 = ("assets/Last_of_Us/Jesse-TLOU.webp");
+const image6 = ("assets/Last_of_Us/TLOU2-Maria-portrait.webp");
 
 // defines HTML constants
 const myButton = document.getElementById("my-button");
-const myParagraph = document.getElementById("my-paragraph")
-const characterImage = document.getElementById("character1");
+const myParagraph = document.getElementById("my-paragraph");
+const characterImage = document.getElementById("selected-character");
 
 //  let variables
 let charcterCounter = 1;
@@ -30,7 +33,7 @@ function clickFunction() {
     charcterCounter += 1;
 
     // finds images depending on charcter counter
-    if(charcterCounter > 3){
+    if(charcterCounter > 6){
         charcterCounter =1;
     }
 
@@ -46,6 +49,21 @@ function clickFunction() {
 
     if (charcterCounter === 3) {
         characterImage.src = image3;
+        return;
+    }
+
+    if (charcterCounter === 4) {
+        characterImage.src = image4;
+        return;
+    }
+
+    if (charcterCounter === 5) {
+        characterImage.src = image5;
+        return;
+    }
+
+    if (charcterCounter === 6) {
+        characterImage.src = image6;
         return;
     }
 
