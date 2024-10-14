@@ -1,16 +1,10 @@
 // defines image sources for charcter choice
-// last of us
 const image1 = ("assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp");
 const image2 = ("assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png");
 const image3 = ("assets/Last_of_Us/DinaPart2.webp");
 const image4 = ("assets/Last_of_Us/Tommy_Seattle_Profile.webp");
 const image5 = ("assets/Last_of_Us/Jesse-TLOU.webp");
 const image6 = ("assets/Last_of_Us/TLOU2-Maria-portrait.webp");
-
-// detroit become human
-const image7 = ("assets/Detriot_Become_Human/Connor_JP_site.webp");
-const image8 = ("assets/Detriot_Become_Human/Kara_JP_site.webp");
-const image9 = ("assets/Detriot_Become_Human/Markus_JP_site.webp");
 
 // defines HTML constants
 const myButton = document.getElementById("my-button");

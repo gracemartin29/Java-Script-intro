@@ -8,39 +8,8 @@ body {
   background-color: #47632e;
 }
 
-.bg-cyan {
-  background-color: rgb(82, 191, 193);
-}
-
-.bg-green {
-  background-color: rgb(165, 165, 70);
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-dark_blue {
-  background-color: rgb(25, 40, 91);
-}
-
 /* text colours */
 .text-white {
   color: white;
 }
 
-.text-green {
-  color: #2c3e1d;
-}
-
-.text-blue {
-  color: rgb(7, 19, 58);
-}
-
-a {
-  color: rgb(172, 185, 186);
-}
-
-a:hover {
-  color: blue;
-}
