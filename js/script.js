@@ -10,7 +10,7 @@ const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.web
 const imageButton = document.getElementById("image-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
-const nameButton = document.getElementById("name-button");
+const submitButton = document.getElementById("submit-button");
 const characterName = document.getElementById("character-name")
 
 //  let variables
@@ -24,7 +24,7 @@ let characterCounter = 1;
  * @returns when character is chosen
  */
 
-function clickFunction() {
+function characterChangeFunction() {
 
     // shows clicks in inspect --> console, used to check code is working
     console.log("the button has been clicked")
@@ -43,11 +43,11 @@ function clickFunction() {
     characterImage.src = images[characterCounter-1];
 }
 
-imageButton.onclick = clickFunction;
+imageButton.onclick = characterChangeFunction;
 
-// character name button function
+// submit button function
 function submitFunction() {
     myParagraph.innerHTML = characterName.value;
 }
 
-nameButton.onclick = submitFunction;
+submitButton.onclick = submitFunction;
