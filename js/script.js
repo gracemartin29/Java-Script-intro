@@ -7,14 +7,16 @@ const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.web
     "assets/Last_of_Us/TLOU2-Maria-portrait.webp"]
 
 // defines HTML constants
-const myButton = document.getElementById("my-button");
+const imageButton = document.getElementById("image-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
+const nameButton = document.getElementById("name-button");
+const charcterName = document.getElementById("charcter-name")
 
 //  let variables
 let charcterCounter = 1;
 
-// button function 1
+// image button function
 
 /**
  * update charcter counter and display next charcter
@@ -41,4 +43,11 @@ function clickFunction() {
     characterImage.src = images[charcterCounter-1];
 }
 
-myButton.onclick = clickFunction;
+imageButton.onclick = clickFunction;
+
+// charcter name button function
+function submitFunction() {
+    myParagraph.innerHTML = charcterName.value;
+}
+
+nameButton.onclick = submitFunction;
