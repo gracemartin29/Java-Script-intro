@@ -11,17 +11,17 @@ const imageButton = document.getElementById("image-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
 const nameButton = document.getElementById("name-button");
-const charcterName = document.getElementById("charcter-name")
+const characterName = document.getElementById("character-name")
 
 //  let variables
-let charcterCounter = 1;
+let characterCounter = 1;
 
 // image button function
 
 /**
- * update charcter counter and display next charcter
+ * update character counter and display next character
  * sets counter back to one when three is passed
- * @returns when charcter is chosen
+ * @returns when character is chosen
  */
 
 function clickFunction() {
@@ -29,25 +29,25 @@ function clickFunction() {
     // shows clicks in inspect --> console, used to check code is working
     console.log("the button has been clicked")
 
-    myParagraph.innerHTML = "I am on charcter " + charcterCounter;
+    myParagraph.innerHTML = "I am on character " + characterCounter;
 
-    // update charcter counter
-    charcterCounter += 1;
+    // update character counter
+    characterCounter += 1;
 
-    // resets charcterCounter after all images have been viewed
-    if (charcterCounter > images.length) {
-        charcterCounter = 1;
+    // resets characterCounter after all images have been viewed
+    if (characterCounter > images.length) {
+        characterCounter = 1;
     }
 
-    // sets images bases on charcterCounter
-    characterImage.src = images[charcterCounter-1];
+    // sets images bases on characterCounter
+    characterImage.src = images[characterCounter-1];
 }
 
 imageButton.onclick = clickFunction;
 
-// charcter name button function
+// character name button function
 function submitFunction() {
-    myParagraph.innerHTML = charcterName.value;
+    myParagraph.innerHTML = characterName.value;
 }
 
 nameButton.onclick = submitFunction;
