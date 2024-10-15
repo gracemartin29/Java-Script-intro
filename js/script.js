@@ -1,10 +1,10 @@
-// defines image sources for charcter choice
-const image1 = ("assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp");
-const image2 = ("assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png");
-const image3 = ("assets/Last_of_Us/DinaPart2.webp");
-const image4 = ("assets/Last_of_Us/Tommy_Seattle_Profile.webp");
-const image5 = ("assets/Last_of_Us/Jesse-TLOU.webp");
-const image6 = ("assets/Last_of_Us/TLOU2-Maria-portrait.webp");
+// image array
+const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp",
+    "assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png",
+    "assets/Last_of_Us/DinaPart2.webp",
+    "assets/Last_of_Us/Tommy_Seattle_Profile.webp",
+    "assets/Last_of_Us/Jesse-TLOU.webp",
+    "assets/Last_of_Us/TLOU2-Maria-portrait.webp"]
 
 // defines HTML constants
 const myButton = document.getElementById("my-button");
@@ -12,7 +12,7 @@ const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("selected-character");
 
 //  let variables
-let charcterCounter = 2;
+let charcterCounter = 1;
 
 // button function 1
 
@@ -32,41 +32,13 @@ function clickFunction() {
     // update charcter counter
     charcterCounter += 1;
 
-    // finds images depending on charcter counter
-    if (charcterCounter > 6) {
+    // resets charcterCounter after all images have been viewed
+    if (charcterCounter > images.length) {
         charcterCounter = 1;
     }
 
-    if (charcterCounter === 1) {
-        characterImage.src = image6;
-        return;
-    }
-
-    if (charcterCounter === 2) {
-        characterImage.src = image1;
-        return;
-    }
-
-    if (charcterCounter === 3) {
-        characterImage.src = image2;
-        return;
-    }
-
-    if (charcterCounter === 4) {
-        characterImage.src = image3;
-        return;
-    }
-
-    if (charcterCounter === 5) {
-        characterImage.src = image4;
-        return;
-    }
-
-    if (charcterCounter === 6) {
-        characterImage.src = image5;
-        return;
-    }
-
+    // sets images bases on charcterCounter
+    characterImage.src = images[charcterCounter-1];
 }
 
 myButton.onclick = clickFunction;
