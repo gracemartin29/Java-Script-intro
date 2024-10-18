@@ -16,22 +16,30 @@
 </head>
 
 <body>
-
   <!-- main div - full width and full height -->
   <div class="container width-full height-full">
+
     <!-- inner div - floating in middle of webpage -->
-    <div class="container flex-column width-half height-500px bg-dark_green text-white">
+    <div class="container width-half height-500px bg-dark_green text-white">
+
+      <!-- complements div -->
+      <div class="container felx-colum">
+        <img draggable="true" id="complement" src="assets/complements/firefly.jpg">
+        <img draggable="true" id="complement" src="assets/complements/guitar.jpg">
+      </div>
 
       <!-- character display -->
-      <img id="selected-character" src="assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp">
-      <p id="my-paragraph" class="padding">I am on character 1</p>
-      <!-- change of character button -->
-      <button id="image-button"> Click me! </button>
+      <div class="container flex-column">
+        <img id="character-img" src="assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp">
+        <p id="my-paragraph" class="padding">I am on character 1</p>
+        <!-- change of character button -->
+        <button id="image-button"> Change Character </button>
 
-      <!-- input button -->
-      <div class = "padding">
-        <input id="character-name">
-        <button id="submit-button"> Submit </button>
+        <!-- input button -->
+        <div class="padding">
+          <input id="character-name">
+          <button id="submit-button"> Update Name </button>
+        </div>
       </div>
 
     </div>

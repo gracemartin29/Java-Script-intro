@@ -1,3 +1,11 @@
+// drag and drop constants
+const complements = document.getElementById("complement");
+const dropZone = document.getElementById("character-img");
+
+// let draggedElement = undefined;
+let offsetX = 0;
+let offsetY = 0;
+
 // image array
 const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp",
     "assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png",
@@ -9,7 +17,7 @@ const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.web
 // defines HTML constants
 const imageButton = document.getElementById("image-button");
 const myParagraph = document.getElementById("my-paragraph");
-const characterImage = document.getElementById("selected-character");
+const characterImage = document.getElementById("character-img");
 const submitButton = document.getElementById("submit-button");
 const characterName = document.getElementById("character-name")
 
@@ -40,7 +48,7 @@ function characterChangeFunction() {
     }
 
     // sets images bases on characterCounter
-    characterImage.src = images[characterCounter-1];
+    characterImage.src = images[characterCounter - 1];
 }
 
 imageButton.onclick = characterChangeFunction;
@@ -51,3 +59,30 @@ function submitFunction() {
 }
 
 submitButton.onclick = submitFunction;
+
+// drag and drop functions
+function onDragStart(event) {
+    draggedElement = event.target;
+
+    const style = window.getComputedStyle(draggedImage);
+
+    offsetX = event.clientX - parseInt(style.left);
+    offsetY = event.clientY - parseInt(style.top);
+}
+
+function onDrop(event) {
+    draggedElement.style.left = event.clientX - offsetX + "px";
+    draggedElement.style.top = event.clientY - offsetY + "px";
+}
+
+function onDragOver(event) {
+    event.preventDefault();
+}
+
+dropZone.ondrop = onDrop;
+dropZone.ondragover = onDragOver;
+
+// selects complements individually
+for (let complement of complements) {
+    complement.ondragstart = onDragStart;
+}
