@@ -51,7 +51,7 @@ function characterChangeFunction() {
     // update character counter
     characterCounter += 1;
 
-    // constant that determins what image array to use??
+    // determins what image array to use
     if (page = "https://127.0.0.1:5502/") {
         imageArray = images;
     } else if (page = "http://127.0.0.1:5502/DBH/") {
