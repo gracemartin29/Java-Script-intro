@@ -1,9 +1,3 @@
-/* sizes */
-
-img {
-  height: 300px;
-}
-
 .width-full {
   width: 100%;
 }
@@ -33,4 +27,8 @@ img {
 
 .padding {
   padding: 6px;
+}
+
+#character-img{
+  height: 300px;
 }

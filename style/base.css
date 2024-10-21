@@ -20,11 +20,12 @@ a {
   cursor: pointer;
 }
 
-#complement {
+.complement {
   position: relative;
   width: 70px;
   height: 70px;
 }
+
 
 #my-button {
   all: unset;

@@ -1,10 +1,11 @@
 // drag and drop constants
-const complements = document.getElementById("complement");
+const complements = document.getElementsByClassName("complement");
 const dropZone = document.getElementById("character-img");
 
-// let draggedElement = undefined;
 let offsetX = 0;
 let offsetY = 0;
+
+let draggedImage = undefined;
 
 // image array
 const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp",
@@ -61,22 +62,22 @@ function submitFunction() {
 submitButton.onclick = submitFunction;
 
 // drag and drop functions
+function onDrop(event) {
+    draggedImage.style.left = event.clientX - offsetX + "px";
+    draggedImage.style.top = event.clientY - offsetY + "px";
+}
+
+function onDragOver(event) {
+    event.preventDefault();
+}
+
 function onDragStart(event) {
-    draggedElement = event.target;
+    draggedImage = event.target;
 
     const style = window.getComputedStyle(draggedImage);
 
     offsetX = event.clientX - parseInt(style.left);
     offsetY = event.clientY - parseInt(style.top);
-}
-
-function onDrop(event) {
-    draggedElement.style.left = event.clientX - offsetX + "px";
-    draggedElement.style.top = event.clientY - offsetY + "px";
-}
-
-function onDragOver(event) {
-    event.preventDefault();
 }
 
 dropZone.ondrop = onDrop;
@@ -85,4 +86,6 @@ dropZone.ondragover = onDragOver;
 // selects complements individually
 for (let complement of complements) {
     complement.ondragstart = onDragStart;
+    complement.ondragover = onDragOver;
+    complement.ondrop = onDrop;
 }
