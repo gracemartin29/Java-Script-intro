@@ -22,10 +22,15 @@ a {
 
 .complement {
   position: relative;
-  width: 70px;
-  height: 70px;
 }
 
+#hat-complement{
+  width: 100px;
+}
+
+#guitar-complement{
+  height: 180px;
+}
 
 #my-button {
   all: unset;
