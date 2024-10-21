@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/base.css" />
+    <link rel="stylesheet" href="../style/colour.css" />
+    <link rel="stylesheet" href="../style/layout.css" />
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="bg-dark-blue text-white">
+        <!-- ul means unordered list -->
+        <ul>
+            <!-- li means list item -->
+            <a href="../">
+                <li>Last of Us</li>
+            </a>
+
+            <a href="./">
+                <li>Detriot Become Human</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- main div - full width and full height -->
+    <div class="container width-full height-full">
+
+        <div id="nav-placeholder"></div>
+
+        <!-- inner div - floating in middle of webpage -->
+        <div class="container width-half height-500px bg-dark-blue text-white">
+
+            <!-- character display -->
+            <div class="container flex-column">
+                <img id="character-img" src="/assets/DBH/connor-img.webp">
+                <p id="my-paragraph" class="padding">I am on character 1</p>
+                <!-- change of character button -->
+                <button id="image-button"> Change Character </button>
+
+                <!-- input button -->
+                <div class="padding container">
+                    <input id="character-name">
+                    <button id="submit-button"> Update Name </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

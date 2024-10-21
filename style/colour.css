@@ -8,6 +8,10 @@ body {
   background-color: #47632e;
 }
 
+.bg-dark-blue{
+  background-color: darkblue;
+}
+
 /* text colours */
 .text-white {
   color: white;

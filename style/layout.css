@@ -29,6 +29,21 @@
   padding: 6px;
 }
 
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
 #character-img{
   height: 300px;
+}
+
+#nav-placeholder{
+  height: 40px;
 }

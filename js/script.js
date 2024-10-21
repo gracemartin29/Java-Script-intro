@@ -1,3 +1,6 @@
+let page = document.URL;
+let imageArray;
+
 // drag and drop constants
 const complements = document.getElementsByClassName("complement");
 const dropZone = document.getElementById("character-img");
@@ -7,7 +10,8 @@ let offsetY = 0;
 
 let draggedImage = undefined;
 
-// image array
+// images arrays
+// last of us
 const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.webp",
     "assets/Last_of_Us/Ellie_in_The_Last_of_Us_Part_II.png",
     "assets/Last_of_Us/DinaPart2.webp",
@@ -15,12 +19,15 @@ const images = ["assets/Last_of_Us/Joel_Miller_Inconsistently_Heinous_2.WEBP.web
     "assets/Last_of_Us/Jesse-TLOU.webp",
     "assets/Last_of_Us/TLOU2-Maria-portrait.webp"]
 
+// detriot become human
+const dbhImages = ["/assets/DHB/connor-img.webp", "/assets/DHB/kara-img.webp", "/assets/DHB/markus-img.webp"]
+
 // defines HTML constants
 const imageButton = document.getElementById("image-button");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("character-img");
 const submitButton = document.getElementById("submit-button");
-const characterName = document.getElementById("character-name")
+const characterName = document.getElementById("character-name");
 
 //  let variables
 let characterCounter = 1;
@@ -33,6 +40,7 @@ let characterCounter = 1;
  * @returns when character is chosen
  */
 
+
 function characterChangeFunction() {
 
     // shows clicks in inspect --> console, used to check code is working
@@ -43,13 +51,20 @@ function characterChangeFunction() {
     // update character counter
     characterCounter += 1;
 
+    // constant that determins what image array to use??
+    if (page = "https://127.0.0.1:5502/") {
+        imageArray = images;
+    } else if (page = "http://127.0.0.1:5502/DBH/") {
+        imageArray = dbhImages;
+    }
+
     // resets characterCounter after all images have been viewed
-    if (characterCounter > images.length) {
+    if (characterCounter > imageArray.length) {
         characterCounter = 1;
     }
 
     // sets images bases on characterCounter
-    characterImage.src = images[characterCounter - 1];
+    characterImage.src = imageArray[characterCounter - 1];
 }
 
 imageButton.onclick = characterChangeFunction;
